@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Architek — Arquitetura de Sistemas &amp; Programa SaaS</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <div class="brand">Architek<span>.</span> <span class="mono" style="font-size:12px; color:var(--ink-dimmer); font-weight:400;" data-i18n="nav.role">por Arthur Ximenes</span></div>
+    <div class="navlinks">
+      <a href="#services" data-i18n="nav.services">Serviços</a>
+      <a href="#program" data-i18n="nav.program">Programa</a>
+      <a href="#audience" data-i18n="nav.audience">Para quem</a>
+      <a href="#contact" data-i18n="nav.contact">Contato</a>
+    </div>
+    <div class="lang-toggle">
+      <button id="btn-pt" class="active" onclick="setLang('pt')">PT</button>
+      <button id="btn-fr" onclick="setLang('fr')">FR</button>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <span class="eyebrow mono" data-i18n="hero.eyebrow">FUNDADOR · ARQUITETO DE SISTEMAS</span>
+    <h1 data-i18n-html="hero.title">Eu construo a <em>arquitetura</em> por trás do seu SaaS — não apenas automações soltas.</h1>
+    <p class="hero-sub" data-i18n="hero.sub">Dois caminhos: projetos personalizados de automação e arquitetura de sistemas, ou um programa estruturado de 3 meses para você sair da ideia a um SaaS em produção.</p>
+    <div class="hero-ctas">
+      <a href="#services" class="btn btn-primary" data-i18n="hero.cta1">Ver os dois serviços</a>
+      <a href="#contact" class="btn btn-ghost" data-i18n="hero.cta2">Agendar conversa</a>
+    </div>
+
+    <div class="diagram reg-mark">
+      <span class="diagram-label mono" data-i18n="hero.diagram.label">ESQUEMA · IDEIA → PRODUÇÃO</span>
+      <div class="flow">
+        <div class="flow-node">
+          <div class="num mono">01</div>
+          <div class="label" data-i18n="hero.diagram.n1">Ideia</div>
+          <div class="sub mono" data-i18n="hero.diagram.n1sub">validação</div>
+        </div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-node">
+          <div class="num mono">02</div>
+          <div class="label" data-i18n="hero.diagram.n2">Arquitetura</div>
+          <div class="sub mono" data-i18n="hero.diagram.n2sub">dados &amp; fluxos</div>
+        </div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-node">
+          <div class="num mono">03</div>
+          <div class="label" data-i18n="hero.diagram.n3">Automação</div>
+          <div class="sub mono" data-i18n="hero.diagram.n3sub">construção</div>
+        </div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-node">
+          <div class="num mono">04</div>
+          <div class="label" data-i18n="hero.diagram.n4">SaaS ativo</div>
+          <div class="sub mono" data-i18n="hero.diagram.n4sub">primeiros clientes</div>
+        </div>
+      </div>
+      <div class="diagram-rev mono" data-i18n="hero.diagram.rev">REV. 01 — 2026</div>
+    </div>
+  </div>
+</header>
+
+<section id="founder">
+  <div class="wrap">
+    <div class="founder-grid">
+      <div class="founder-photo reg-mark">
+        <img src="assets/arthur-ximenes.jpg" alt="Arthur Ximenes" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+        <div class="founder-photo-fallback mono">FOTO DO FUNDADOR</div>
+      </div>
+      <div class="founder-text">
+        <div class="section-tag mono" data-i18n="founder.tag">O FUNDADOR</div>
+        <h2 data-i18n="founder.title">Arthur Ximenes</h2>
+        <p data-i18n="founder.bio">Fundador e arquiteto por trás dos dois serviços. Construí meu próprio SaaS do zero até produção, e é essa mesma abordagem — arquitetura antes de automação — que aplico em cada projeto e em cada turma do programa.</p>
+        <a href="https://www.linkedin.com/in/arthur-ximenes-a752b8166" target="_blank" class="btn btn-primary" data-i18n="founder.cta">Conectar no LinkedIn</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="wrap">
+    <div class="section-tag mono" data-i18n="services.tag">SERVIÇOS</div>
+    <h2 data-i18n="services.title">Dois jeitos de trabalhar comigo</h2>
+    <p class="section-intro" data-i18n="services.intro">Empresas que já têm operação escolhem arquitetura sob medida. Founders que estão começando do zero escolhem o programa de 3 meses.</p>
+
+    <div class="services-grid">
+      <div class="service-card reg-mark">
+        <div class="tag mono" data-i18n="svc1.tag">PROJETO PERSONALIZADO</div>
+        <h3 data-i18n="svc1.title">Arquitetura &amp; Automação de Sistemas</h3>
+        <p data-i18n="svc1.desc">Para empresas que já operam e precisam reestruturar CRM, integrar fontes de dados e eliminar trabalho manual repetitivo — com uma arquitetura pensada para durar, não gambiarras.</p>
+        <ul>
+          <li data-i18n="svc1.li1">Reestruturação de CRM e pipelines de vendas</li>
+          <li data-i18n="svc1.li2">Integração entre plataformas de anúncios, CRM e atendimento</li>
+          <li data-i18n="svc1.li3">Automação de fluxos operacionais ponta a ponta</li>
+          <li data-i18n="svc1.li4">Desenho de arquitetura de dados sob medida</li>
+        </ul>
+        <div class="service-price" data-i18n="svc1.price">Orçamento personalizado</div>
+        <div class="service-price-note mono" data-i18n="svc1.pricenote">ESCOPO DEFINIDO APÓS DIAGNÓSTICO INICIAL</div>
+        <a href="#contact" class="btn btn-ghost" style="align-self:flex-start" data-i18n="svc1.cta">Solicitar diagnóstico</a>
+      </div>
+
+      <div class="service-card reg-mark">
+        <div class="tag mono" data-i18n="svc2.tag">PROGRAMA DE 3 MESES</div>
+        <h3 data-i18n="svc2.title">Do Zero ao seu SaaS</h3>
+        <p data-i18n="svc2.desc">Acompanhamento estruturado de 3 meses para founders que querem construir e lançar um SaaS com arquitetura sólida desde o primeiro dia, sem depender de uma equipe técnica interna.</p>
+        <ul>
+          <li data-i18n="svc2.li1">Calls semanais + suporte assíncrono contínuo</li>
+          <li data-i18n="svc2.li2">Arquitetura técnica desenhada com você, não para você</li>
+          <li data-i18n="svc2.li3">Construção assistida do MVP durante o programa</li>
+          <li data-i18n="svc2.li4">Preparação para os primeiros clientes pagantes</li>
+        </ul>
+        <div class="service-price"><span class="cur" data-i18n="svc2.pricecur">€</span> 6.000</div>
+        <div class="service-price-note mono" data-i18n="svc2.pricenote">3 MESES · TURMAS LIMITADAS</div>
+        <a href="#program" class="btn btn-primary" style="align-self:flex-start" data-i18n="svc2.cta">Ver o programa</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="program">
+  <div class="wrap">
+    <div class="section-tag mono" data-i18n="program.tag">O PROGRAMA</div>
+    <h2 data-i18n="program.title">3 meses, 3 fases</h2>
+    <p class="section-intro" data-i18n="program.intro">Cada fase tem um objetivo único. Você não avança para a próxima sem ter concluído a anterior.</p>
+
+    <div class="phases">
+      <div class="phase">
+        <div class="phase-tag mono">M1 · FUNDAÇÃO</div>
+        <div>
+          <h4 data-i18n="program.p1.title">Arquitetura e validação</h4>
+          <p data-i18n="program.p1.desc">Definimos a arquitetura técnica do produto (dados, integrações, stack), validamos o modelo de negócio com quem vai pagar por ele, e fechamos o escopo exato do MVP.</p>
+        </div>
+      </div>
+      <div class="phase">
+        <div class="phase-tag mono">M2 · CONSTRUÇÃO</div>
+        <div>
+          <h4 data-i18n="program.p2.title">Construção assistida</h4>
+          <p data-i18n="program.p2.desc">Construímos as automações e o núcleo do produto juntos, com revisões semanais. Você aprende a arquitetura à medida que ela é construída — não recebe uma caixa-preta.</p>
+        </div>
+      </div>
+      <div class="phase">
+        <div class="phase-tag mono">M3 · MERCADO</div>
+        <div>
+          <h4 data-i18n="program.p3.title">Go-to-market</h4>
+          <p data-i18n="program.p3.desc">Definimos precificação, montamos o processo de aquisição dos primeiros clientes e deixamos as métricas certas em pé para você escalar depois do programa sozinho.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="audience">
+  <div class="wrap">
+    <div class="section-tag mono" data-i18n="audience.tag">PARA QUEM</div>
+    <h2 data-i18n="audience.title">Dois públicos, um mesmo padrão de trabalho</h2>
+    <p class="section-intro" data-i18n="audience.intro">Atendo em português e em francês, com o mesmo nível de exigência técnica nos dois mercados.</p>
+
+    <div class="audience-grid">
+      <div class="audience-card reg-mark">
+        <div class="flag-row mono" data-i18n="audience.fr.flags">FRANÇA · SUÍÇA · BÉLGICA · CANADÁ</div>
+        <h4 data-i18n="audience.fr.title">Founders francófonos</h4>
+        <p data-i18n="audience.fr.desc">Empreendedores na Europa francófona e no Canadá que querem construir um SaaS com uma arquitetura enxuta, sem contratar uma equipe técnica inteira antes de validar o mercado.</p>
+      </div>
+      <div class="audience-card reg-mark">
+        <div class="flag-row mono" data-i18n="audience.pt.flags">BRASIL · PORTUGAL</div>
+        <h4 data-i18n="audience.pt.title">Founders lusófonos</h4>
+        <p data-i18n="audience.pt.desc">Empreendedores no Brasil e em Portugal que já têm uma ideia validada no mercado local e precisam transformá-la em um produto SaaS real, com arquitetura pronta para escalar.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-section" id="contact">
+  <div class="wrap">
+    <div class="cta-box reg-mark">
+      <div>
+        <h2 data-i18n="cta.title">Vamos conversar sobre o seu caso</h2>
+        <p data-i18n="cta.desc">Me conte em que fase seu projeto está — automação de uma operação existente ou construção de um SaaS do zero — e eu te digo qual dos dois caminhos faz mais sentido.</p>
+      </div>
+      <div class="cta-actions">
+        <a href="mailto:arthur@seudominio.com" class="btn btn-primary" data-i18n="cta.email">Enviar e-mail</a>
+        <a href="#" class="btn btn-ghost" data-i18n="cta.call">Agendar chamada</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="mono" data-i18n="footer.left">© 2026 Arthur Ximenes · Arquitetura de Sistemas &amp; Programa SaaS</div>
+    <div class="mono" data-i18n="footer.right">Recife, Brasil · Trabalho remoto — PT / FR / EN</div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
