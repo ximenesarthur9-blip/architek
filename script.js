@@ -45,8 +45,7 @@ const translations = {
     "cta.title":"Vamos conversar sobre o seu caso",
     "cta.desc":"Me conte em que fase seu projeto está — automação de uma operação existente ou construção de um SaaS do zero — e eu te digo qual dos dois caminhos faz mais sentido.",
     "cta.email":"Enviar e-mail","cta.call":"Agendar chamada",
-    "footer.left":"© 2026 Architek · por Arthur Ximenes",
-    "footer.right":"Recife, Brasil · Trabalho remoto — PT / FR / EN"
+    "footer.left":"© 2026 Architek · por Arthur Ximenes"
   },
   fr: {
     "nav.role":"par Arthur Ximenes","nav.services":"Services","nav.program":"Programme","nav.contact":"Contact",
@@ -94,8 +93,7 @@ const translations = {
     "cta.title":"Parlons de votre projet",
     "cta.desc":"Dites-moi où en est votre projet — automatisation d'une activité existante ou construction d'un SaaS depuis zéro — et je vous dirai quelle voie a le plus de sens.",
     "cta.email":"Envoyer un e-mail","cta.call":"Planifier un appel",
-    "footer.left":"© 2026 Architek · par Arthur Ximenes",
-    "footer.right":"Recife, Brésil · Travail à distance — FR / PT / EN"
+    "footer.left":"© 2026 Architek · par Arthur Ximenes"
   }
 };
 
