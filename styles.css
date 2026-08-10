@@ -53,11 +53,11 @@
     display:flex; border:1px solid var(--line); border-radius:4px; overflow:hidden;
     font-family:'IBM Plex Mono'; font-size:12px;
   }
-  .lang-toggle button{
-    background:transparent; border:none; color:var(--ink-dimmer); padding:8px 14px; cursor:pointer;
-    transition:.15s;
+  .lang-toggle a{
+    background:transparent; color:var(--ink-dimmer); padding:8px 14px; cursor:pointer;
+    transition:.15s; display:inline-block;
   }
-  .lang-toggle button.active{ background:var(--blue); color:#0A1120; font-weight:500;}
+  .lang-toggle a.active{ background:var(--blue); color:#0A1120; font-weight:500;}
   .navlinks-mobile{display:none;}
   @media (max-width:760px){ .navlinks{display:none;} }
 
