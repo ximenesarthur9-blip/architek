@@ -151,14 +151,6 @@
   .phase p{ color:var(--ink-dim); font-size:15px; max-width:560px;}
   @media (max-width:600px){ .phase{grid-template-columns:1fr;} }
 
-  /* AUDIENCE */
-  .audience-grid{ display:grid; grid-template-columns:1fr 1fr; gap:24px;}
-  @media (max-width:800px){ .audience-grid{grid-template-columns:1fr;} }
-  .audience-card{ border:1px solid var(--line); border-radius:6px; padding:30px; background:var(--bg-panel-2);}
-  .audience-card .flag-row{ font-family:'IBM Plex Mono'; font-size:12px; color:var(--ink-dimmer); margin-bottom:16px;}
-  .audience-card h4{ font-size:19px; margin-bottom:10px;}
-  .audience-card p{ color:var(--ink-dim); font-size:14.5px;}
-
   /* CTA / CONTACT */
   .cta-section{ text-align:left; border-bottom:none;}
   .cta-box{
